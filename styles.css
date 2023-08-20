@@ -2,9 +2,12 @@
     --accent-color: #f97316;   
 }
 
-body{
-    box-sizing: border-box;
+body{   
     font-family: Nunito Sans;
+}
+
+*{
+    box-sizing: border-box; 
 }
 
 #hero {
@@ -416,6 +419,10 @@ footer{
         width: 100%;
     }
 
+    .button-test-lesson{
+        width: 100%;
+    }
+
     .section-description{
         flex-direction: column;
         justify-content: center;
@@ -452,6 +459,12 @@ footer{
 
     .footer-part{
         margin-top: 20px;
+    }
+
+    #color-ffedd5{
+        background-color: #fed7aa;
+        width: 100%;
+        
     }
 
 }

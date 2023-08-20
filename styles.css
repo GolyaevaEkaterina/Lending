@@ -27,6 +27,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     height: 120px;
+    padding-left: 3%;
 }
 
 #logo{
@@ -63,6 +64,7 @@ nav{
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    padding-left: 3%;
 }
 
 .title__main{
@@ -124,7 +126,8 @@ nav{
     font-size: 36px;
     font-weight: 600;
     text-align: center;
-    padding-top: 100px;   
+    padding-top: 100px;
+     
 }
 
 .section-advantages{
@@ -241,7 +244,7 @@ main{
 }
 
 #reviews{
-   width: 600px;
+   width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -279,6 +282,10 @@ main{
     margin-top: 30px;
 }
 
+.section-subscription{
+    width: 100%;
+}
+
 .subscription{
     margin: 10px;
     margin-top: 60px;
@@ -289,6 +296,7 @@ main{
     height: 260px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     
 }
 
@@ -352,7 +360,42 @@ footer{
 
 @media (max-width: 600px){
     .max-width1024{
-        margin: 0 auto;
+        /*margin: 0 auto;*/
+     
+    }
+
+    *{
+        max-width: 600px;
+        
+    }
+
+    .nav-all{
+        flex-wrap: wrap;
+    }
+
+    .title__main{
+        font-size: 40px;
+        font-weight: 600;
+        width: 60%;
+        padding-top: 100px;
+    }
+    .title__paragraph{
+        font-size: 20px;
+        width: 40%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: #44403c;
+        font-weight: 300;
+    }
+    .second-title{
+        margin-left: 10px;
+        margin-right: 10px;
+         
+    }
+
+    .advantages{
+        width: 100%;
+        margin: 0 10px;
     }
 
     .section-advantages{
@@ -361,6 +404,16 @@ footer{
         align-items: center;
         flex-grow: 1;
         flex-wrap: wrap;
+    }
+
+    .test-lesson{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .test-lesson_input{
+        width: 100%;
     }
 
     .section-description{
@@ -372,7 +425,7 @@ footer{
         max-width: 600px;
     }
 
-    .sectiom-subscription{
+    .section-subscription{
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -381,5 +434,24 @@ footer{
         max-width: 600px;
     }
 
+    .subscription{
+        margin-top: 20px;
+    }
+    .section-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-1 {
+        background-color: hwb(0 100% 0% / 0.479);
+        
+    
+    }
+
+    .footer-part{
+        margin-top: 20px;
+    }
 
 }

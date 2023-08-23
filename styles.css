@@ -25,6 +25,10 @@ body{
     width: 100%;
 }
 
+.center{
+    margin: 0 auto;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -185,15 +189,11 @@ nav{
     color: #78716c;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .description{
-    width: 500px;
-    height: 250px;
+    max-width: 500px;
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,8 +212,9 @@ main{
     color: #57534e;
 }
 #group-people{
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    width: 100%;
+    
     object-fit: cover;
 }
 
@@ -288,12 +289,13 @@ main{
 .section-subscription{
     max-width: 1024px;
     width: 100%;
-    
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    display: flex;
+    gap: 20px;
 }
 
 .subscription{
-    margin-left: 10px;
-    margin-right: 10px;
     margin-top: 60px;
     padding: 20px;
     border: 1px solid #d6d3d1;
@@ -302,7 +304,6 @@ main{
     height: 290px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     
 }
 
@@ -401,7 +402,7 @@ footer{
 
     .advantages{
         width: 100%;
-        margin: 0 10px;
+        /*margin: 0 10px;*/
     }
 
     .section-advantages{
@@ -410,6 +411,7 @@ footer{
         align-items: center;
         flex-grow: 1;
         flex-wrap: wrap;
+   
     }
 
     .test-lesson{
@@ -442,6 +444,7 @@ footer{
         flex-grow: 1;
         flex-wrap: wrap;
         max-width: 600px;
+        /*padding-right: 20px;*/
     }
 
     .subscription{
@@ -456,8 +459,6 @@ footer{
 
     .hero-1 {
         background-color: hwb(0 100% 0% / 0.479);
-        
-    
     }
 
     .footer-part{
